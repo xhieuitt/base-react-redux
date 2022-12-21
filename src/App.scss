@@ -10,13 +10,78 @@ body {
 
 .app-container {
   .header-container {
-    .navbar-nav {
+
+    .btn-login {
+      border-radius: 5px;
+      margin-right : 15px;
+      padding      : 0 15px;
+      border       : #535353 1px solid;
+      height       : 40px;
+    }
+
+    .btn-signup {
+      border-radius   : 5px;
+      padding         : 0 15px;
+      background-color: #303030;
+      border-color    : #303030;
+      color           : white;
+      height          : 40px;
+
+
+      &:hover {
+        background-color: #000;
+        border-color    : #000;
+
+      }
+
+    }
+
+    .navbar {
+      padding-top     : 20px;
+      z-index         : 10;
+      background-color: rgba(0, 0, 0, 0) !important;
+
       .nav-link {
         &.active {
           //Viết dấu & thế này để thể hiện thằng active ngang hàng với nav-link
-          color: red;
+          color: rgb(66, 169, 233);
         }
       }
     }
   }
+
+  .homepage-container {
+    .homepage-content {
+      padding       : 100px;
+      width         : 50%;
+      position      : relative;
+      display       : flex;
+      flex-direction: column;
+      gap           : 30px;
+
+      .text-title {
+        font-size  : 64px;
+        font-weight: 300;
+      }
+
+      .text-description {
+        font-size  : 24px;
+        font-weight: 300;
+      }
+
+      .btn-click {
+        font-size       : 16px;
+        border-radius   : 5px;
+        padding         : 10px 20px;
+        background-color: #303030;
+        color           : #fff
+      }
+    }
+  }
+}
+
+video {
+  position: fixed;
+  bottom  : 0;
+  width   : 100%;
 }
